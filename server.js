@@ -12,7 +12,8 @@ var methodOverride = require('method-override');
 // configure app
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var port     = process.env.PORT || 8080; // set our port
+var port     = process.env.OPENSHIFT_NODEJS_PORT || 8080; // set our port
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // get all data/stuff of the body (POST) parameters
 app.use(bodyParser.json()); // parse application/json
@@ -223,5 +224,5 @@ app.get('*', function(req, res) {
 
 // START THE SERVER
 // =============================================================================
-app.listen($OPENSHIFT_INTERNAL_PORT);
+app.listen(port,server_ip_address);
 console.log('Magic happens on port ' + port);
