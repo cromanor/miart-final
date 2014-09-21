@@ -223,5 +223,5 @@ app.get('*', function(req, res) {
 
 // START THE SERVER
 // =============================================================================
-app.listen(port);
+app.listen($OPENSHIFT_INTERNAL_PORT);
 console.log('Magic happens on port ' + port);
