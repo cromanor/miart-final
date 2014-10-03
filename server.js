@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 
 //var port     = process.env.PORT || 8080; // set our port
 
-var port = process.env.OPENSHIFT_NODEJS_PORT || 8080; // set our port
+//var port = process.env.OPENSHIFT_NODEJS_PORT || 8080; // set our port
 
 =======
 
@@ -263,8 +263,8 @@ app.get('*', function(req, res) {
 //app.listen(port);
 //console.log('Magic happens on port ' + port);
 
-app.listen(port, server_ip_address);
-console.log('Magic happens on port ' + port);
+//app.listen(port, server_ip_address);
+//console.log('Magic happens on port ' + port);
 
 =======
 app.listen(port, server_ip_address);
