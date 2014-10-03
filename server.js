@@ -13,12 +13,17 @@ var methodOverride = require('method-override');
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
+<<<<<<< HEAD
 
 
 //var port     = process.env.PORT || 8080; // set our port
 
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080; // set our port
 
+=======
+
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080; // set our port
+>>>>>>> f61c11a47493b24355631a59310c13b09d6c9ec7
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 
 // get all data/stuff of the body (POST) parameters
@@ -114,6 +119,7 @@ router.route('/bears/:bear_id')
 		res.json(bear);
 	});
 })
+<<<<<<< HEAD
 
 // update the bear with this id
 .put(function(req, res) {
@@ -122,6 +128,16 @@ router.route('/bears/:bear_id')
 		if (err)
 			res.send(err);
 
+=======
+
+// update the bear with this id
+.put(function(req, res) {
+	Bear.findById(req.params.bear_id, function(err, bear) {
+
+		if (err)
+			res.send(err);
+
+>>>>>>> f61c11a47493b24355631a59310c13b09d6c9ec7
 		bear.name = req.body.name;
 		bear.save(function(err) {
 			if (err)
@@ -242,6 +258,7 @@ app.get('*', function(req, res) {
 
 // START THE SERVER
 // =============================================================================
+<<<<<<< HEAD
 
 //app.listen(port);
 //console.log('Magic happens on port ' + port);
@@ -249,3 +266,7 @@ app.get('*', function(req, res) {
 app.listen(port, server_ip_address);
 console.log('Magic happens on port ' + port);
 
+=======
+app.listen(port, server_ip_address);
+console.log('Magic happens on port ' + port);
+>>>>>>> f61c11a47493b24355631a59310c13b09d6c9ec7
