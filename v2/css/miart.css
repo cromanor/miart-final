@@ -87,7 +87,7 @@ input{
   padding-top:2em;
   /* Set the fixed height of the footer here */
   height: 150px;
-  background-color: #f5f5f5;
+  background-color: rgba(247,227,188,1);
 }
 
 p.social i {
@@ -96,10 +96,15 @@ p.social i {
 	height: 60px;
 	line-height: 60px;
 	text-align: center;
-	border: 1px solid #ddd;
+	border: 2px solid;
+	border-color: rgba(126,200,181,1);
 	border-radius: 50%;
 	font-size: 16px;
 	margin: 0 10px 0 0;
+	text-decoration: none;
+}
+i:hover{
+	text-decoration:none;
 }
 h5{
 	font-weight: 300;
