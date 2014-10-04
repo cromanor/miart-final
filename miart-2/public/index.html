@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<base href="/">
+
+	<title>#miArt</title>
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<style type="text/css">
+      #map_canvas { height: 800px; top:30;}
+      #map_canvas-g { height: 800px; top:30;}
+      
+      .angular-google-map-container{height: 800px;}
+
+      .img-artist{
+      	border-radius:180px;
+      	margin-bottom:20px;
+      	border:solid gray;
+      	height:330px;
+      	width:330px;
+
+      }
+      .navbar-header a{
+      	font-size:50px;
+      }
+      .navbar-header a:hover{
+      	color:gold !important;
+      }
+      .navbar-nav a{
+      	font-size:35px;
+      }
+      .navbar-nav a:hover{
+      	color:white !important;
+      }
+      body{
+      	background-color: ;
+      }
+      nav{
+      	margin-top:0em;
+      }
+      .left-side-menu{
+      	height:400px;
+      	position: absolute;
+      	z-index:10;
+      	top:20%;
+      	left:-373px;
+      	background-color: rgba(1,1,1,0.2);
+      	border-radius:6px;
+      }
+      .hider{
+      	position: absolute;
+      	top:230px;
+      	left:0;
+      	height:80px;
+      	width:50px;
+      	font-size: 40px;
+
+      	z-index:200000;
+      	border-radius:2px;
+      	padding:5px;
+      }
+      .hider:hover{
+      	cursor:pointer;
+      }
+      .startHidden {
+      	display: none;
+      }
+    </style>
+	<!-- JS -->
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/controllers/ArtistCtrl.js"></script>
+	<script src="js/services/ArtistService.js"></script>
+	<script src="js/appRoutes.js"></script>
+	<script src="js/app.js"></script>
+	<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script src='/libs/lodash/dist/lodash.underscore.min.js'></script>
+	<script src='libs/angular-google-maps/dist/angular-google-maps.min.js'></script>
+    <script src='libs/jquery/dist/jquery.min.js'></script>
+
+</head>
+<body ng-app="sampleApp" ng-controller="ArtistController">
+<div class="container">
+	
+	<!-- HEADER -->
+	<nav class="navbar navbar-inverse ">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">#MIArt</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li><a href="/" class="type" data-type="museum" data-cat="catMuseums">Museums</a></li>
+			<li><a href="/" class="type" data-type="gallery" data-cat="catGalleries">Galleries</a></li>
+			<li><a href="/" class="type" data-type="building" data-cat="catBuildings">Buildings</a></li>
+			<li><a href="/artists">Artists</a></li>
+			<li><a href="/trivia">Trivia</a></li>
+		</ul>
+	</nav>
+
+	<!-- ANGULAR DYNAMIC CONTENT -->
+	<div id="ngView" ng-view></div>
+
+</div>
+
+    <script type="text/javascript">
+    	var toggle = 0;
+
+		$(".container").on('click', '.hider', function(){
+			console.log('In click event');
+			if(toggle == 1){
+				$(this).siblings('.left-side-menu').animate({
+					left :"-=375px",
+				},900);
+				$(this).animate({
+					left :"-=350px",
+				},900);
+				toggle = 0;
+			}else{
+				$(this).siblings('.left-side-menu').animate({
+					left :"+=374px",
+				},900);
+				$(this).animate({
+					left :"+=350px",
+				},900);
+				toggle = 1;
+			}
+		});
+		function getCoupon(){
+			$(".coupon").toggle();
+		}
+    </script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</body>
+</html>

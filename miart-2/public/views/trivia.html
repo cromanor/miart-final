@@ -1,0 +1,60 @@
+<div class="jumbotron text-center">
+	<h1>Trivia</h1>
+	<h3>Answer the following questions to obtain a coupon!</h3>
+</div>
+<div class="row">
+	<div class="col-sm-8">
+		<form role="form" class="text-justify form-trivia ">
+		  <div class="form-group" ng-repeat="trivia in trivias">
+		    <label for="exampleInputEmail1">{{trivia.Question}}</label><br>
+
+		    <label class="radio-inline">
+		  <input type="radio" name="{{trivia._id}}" id="inlineRadio1" value="option1">{{trivia.wrong1}}
+		</label>
+		<label class="radio-inline">
+		  <input type="radio" name="{{trivia._id}}" id="inlineRadio2" value="option2"> {{trivia.Answer}}
+		</label>
+		<label class="radio-inline">
+		  <input type="radio" name="{{trivia._id}}" id="inlineRadio3" value="option3"> {{trivia.wrong2}}
+		</label>
+		  </div>
+		  <button class="btn btn-default" onclick="getCoupon()">Submit</button>
+		</form>
+	</div>
+	<div class="col-sm-4 img-holder text-right">
+		<img src="img/thinker.jpg" width="100%" />
+		<i>The Thinker - 1902 </i><br>Auguste Rodin
+	</div>
+
+</div>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://romanor.com/miart" data-text="Take this quiz and get free stuff!!!" data-size="large" data-related="miart" data-hashtags="miart" data-dnt="true">Tweet</a>
+
+
+<div class="bg-success text-left coupon row">
+	
+	<div class="col-sm-8">
+		<h1 >Congrats!  -   5$ OFF -	Museum Miami</h1>
+		<h3>This is your coupon </h3>
+		<h3>Go: <a href=""> Here </a> to redeem your coupon!</h3>
+	</div>
+	<div class="col-sm-4">
+		<img src="img/qr.png" width="50%">
+	</div>
+</div>
+<style>
+.form-trivia{
+	padding:5px		;
+}
+
+.img-holder{
+	border-radius:5px;
+}
+.coupon{
+	padding:10px;
+	color:;
+	display:none;
+}
+
+</style
+

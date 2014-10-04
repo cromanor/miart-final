@@ -1,0 +1,18 @@
+<div class="jumbotron text-center">
+	<h1>Artists</h1>
+	<h5>Check out this great people</h5>
+</div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://romanor.com/miart/artists" data-text="Amazing people at" data-size="large" data-hashtags="MIArt">Tweet</a>
+
+<div class="text-left row" ng-repeat=" artist in artists">
+	<div class="col-sm-6">
+		<h3><b><i>{{artist.Name}}</i></b></h3><br>
+		<span><strong>About:</strong> {{artist.Education}}<span><br>
+		<span><strong>Born:</strong> {{artist.Born}}<span><br>
+			<a href="{{artist.Learn_more}}">Learn More</a>
+	</div>
+	<div class="col-sm-6 text-center">
+		<img class="img-artist" src="{{artist.picture}}"/>
+	</div>
+</div>
+
