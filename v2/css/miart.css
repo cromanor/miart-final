@@ -4,16 +4,10 @@
 html, body{
 	height:100%;
 }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 200px;
-  background-color: #f5f5f5;
+/*Main Container */
+.main{
+	height:100%;
 }
-
 /* Nav-Bar */
 .navbar{
 	min-height:100px;
@@ -22,7 +16,7 @@ html, body{
 }
 
 .navbar-brand{
-	font-size: 32px;
+	font-size: 40px;
 	height:auto;
 	color:black !important;
 	font-weight: 300;
@@ -30,6 +24,16 @@ html, body{
 	.navbar-brand:hover{
 		color:gold !important;
 	}
+
+/*Footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 150px;
+  background-color: #f5f5f5;
+}
 
 /*Left Panel */
 .left-panel{
@@ -43,6 +47,8 @@ html, body{
 	margin-left:0 !important;
 	height:100%;
 	position:relative;
+	background-color: rgba(126,200,181,0.9);
+	overflow:scroll;
 }
 input{
 	font-weight:300 !important;
@@ -65,7 +71,7 @@ input{
 	}
 	ul li {
 		list-style-type: none;
-		margin:5px 0px;
+		margin:1em 0px;
 	}
 	.categ-list{
 		padding-top:1em;
@@ -74,7 +80,12 @@ input{
 		width: 100%;
 	}
 
-/*Main Container */
-.main{
-	height:100%;
-}
+	/*Map*/
+	.map{
+		background:url('../img/gmaps.jpg') no-repeat center center;
+		height:100%;
+		position:relative;
+		top:0;
+	}
+
+
