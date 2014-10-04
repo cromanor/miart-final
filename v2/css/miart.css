@@ -29,4 +29,35 @@ html, body{
 }
 	.navbar-brand:hover{
 		color:gold !important;
-	};
+	}
+
+/*Left Panel */
+.left-panel{
+	padding-top:100px;
+	padding-left:2em;
+	padding-right:2em;
+	border:2px solid black;
+	width:30%;
+	margin-left:0 !important;
+	height:100%;
+	position:relative;
+}
+	/*Categories List*/
+	ul{
+		padding-left: 0px;
+	}
+	ul li {
+		list-style-type: none;
+		margin:5px 0px;
+	}
+	.categ-list{
+		padding-top:1em;
+	}
+	.categ-list li > .btn{
+		width: 100%;
+	}
+
+/*Main Container */
+.main{
+	height:100%;
+}
