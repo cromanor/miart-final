@@ -26,16 +26,6 @@ html, body{
 		color:gold !important;
 	}
 
-/*Footer*/
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 150px;
-  background-color: #f5f5f5;
-}
-
 /*Left Panel */
 .left-panel{
 	padding-top:100px;
@@ -88,5 +78,31 @@ input{
 		position:relative;
 		top:0;
 	}
+
+/*Footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top:2em;
+  /* Set the fixed height of the footer here */
+  height: 150px;
+  background-color: #f5f5f5;
+}
+
+p.social i {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	font-size: 16px;
+	margin: 0 10px 0 0;
+}
+h5{
+	font-weight: 300;
+}
 
 
