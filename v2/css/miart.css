@@ -38,11 +38,19 @@ html, body{
 	padding-right:2em;
 	border:2px solid black;
 	width:30%;
+	max-width:400px;
+	min-width:200px;
 	margin-left:0 !important;
 	height:100%;
 	position:relative;
 }
-
+input{
+	font-weight:300 !important;
+	height:50px !important;
+}
+.btn{
+	font-weight:300 !important;
+}
 /*Right Panel*/
 .right-panel{
 	position:relative;
