@@ -13,13 +13,13 @@ html, body{
 	min-height:100px;
 	padding-top:1em;
 	padding:1em 4em 1em 4em;
-	background-color:rgba(212,80,113,1);
+	background-color:rgba(0,0,0,1);
 }
 
 .navbar-brand{
 	font-size: 40px;
 	height:auto;
-	color:black !important;
+	color:white !important;
 	font-weight: 300;
 }
 	.navbar-brand:hover{
