@@ -42,6 +42,15 @@ html, body{
 	height:100%;
 	position:relative;
 }
+
+/*Right Panel*/
+.right-panel{
+	position:relative;
+	height:100%;
+	width:70%;
+	padding-top:100px;
+
+}
 	/*Categories List*/
 	ul{
 		padding-left: 0px;
