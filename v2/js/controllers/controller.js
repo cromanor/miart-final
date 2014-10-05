@@ -1,6 +1,6 @@
 define(["../angular.min"], function(angular) {
 	var miartApp = angular.module('miartApp', []);
-
+    console.log('In controller.js');
 	miartApp.controller('MapCtrl', function ($scope) {
 	  $scope.phones = [
 	    {'name': 'Nexus S',

@@ -21,4 +21,4 @@ requirejs.config({
     }
 });
 
-requirejs(['angular.min', 'jquery.min', 'bootstrap.min', 'controllers/controller']);
+requirejs(['angular.min', 'controllers/controller', 'jquery.min', 'bootstrap.min']);
