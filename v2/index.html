@@ -110,6 +110,9 @@
 					<!--<div class="map"></div>-->
 					<google-map center="map.center" zoom="map.zoom" draggable="true">
 						<marker ng-repeat="point in pois | filter:searchText" coords="{latitude:point.lat,longitude:point.long}" options="point.options" events="point.events" idkey="$index" >
+							<window show="show">
+				                <div>{{point.Name}}</div>
+				            </window>
        					</marker>
 				    </google-map>
 				</div>
