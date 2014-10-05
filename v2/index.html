@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="js/controllers/controller.js"></script>
 	<title>#MIArt</title>
 </head>
-<body ng-controller="MapCtrl">
+<body>
 	<div class="main">
 		<!--Content-->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -72,41 +72,42 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<div class="col-sm-12 left-panel">
-			<div class="">
-				<h1>Categories</h1>
-				<hr>
-				<input type="text" class="form-control" placeholder="Search ...">
-				<ul class="categ-list">
-					<li>
-						<button class="btn btn-lg btn-danger">Category 1</button>
-					</li>
-					<li>
-						<button class="btn btn-lg btn-primary">Category 2</button>
-					</li>
-					<li>
-						<button class="btn btn-lg btn-success">Category 3</button>
-					</li>
-					<li>
-						<button class="btn btn-lg btn-info">Category 4</button>
-					</li>
-					<li>
-						<button class="btn btn-lg btn-warning">Category 5</button>
-					</li>
-					<li>
-						<button class="btn btn-lg btn-default">Category 6</button>
-					</li>
-					<li ng-repeat="phone in phones">{{phone.name}}
+		<div class="Map-Controller" ng-controller="MapCtrl">
+			<div class="col-sm-12 left-panel">
+				<div class="">
+					<h1>Categories</h1>
+					<hr>
+					<input type="text" class="form-control" placeholder="Search ...">
+					<ul class="categ-list">
+						<li>
+							<button class="btn btn-lg btn-danger">Category 1</button>
+						</li>
+						<li>
+							<button class="btn btn-lg btn-primary">Category 2</button>
+						</li>
+						<li>
+							<button class="btn btn-lg btn-success">Category 3</button>
+						</li>
+						<li>
+							<button class="btn btn-lg btn-info">Category 4</button>
+						</li>
+						<li>
+							<button class="btn btn-lg btn-warning">Category 5</button>
+						</li>
+						<li>
+							<button class="btn btn-lg btn-default">Category 6</button>
+						</li>
+						<li ng-repeat="phone in phones">{{phone.name}}
 
-				</ul>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="col-sm-12 right-panel">
-			<div class="right-panel">
-				<div class="map"></div>
+			<div class="col-sm-12 right-panel">
+				<div class="right-panel">
+					<div class="map"></div>
+				</div>
 			</div>
-		</div>
-
+		</div><!--End Map Controller-->
 	</div><!--End Main Container-->
 
 		<footer>

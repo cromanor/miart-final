@@ -25,7 +25,10 @@ html, body{
 	.navbar-brand:hover{
 		color:gold !important;
 	}
-
+/*Map Controller*/
+.Map-Controller{
+	height:100%;
+}
 /*Left Panel */
 .left-panel{
 	padding-top:100px;
