@@ -10,3 +10,5 @@ requirejs.config({
         controllers: '../controllers'
     }
 });
+
+requirejs(['angular.min', 'jquery.min', 'bootstrap.min', 'controllers/controller']);
