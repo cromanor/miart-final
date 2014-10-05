@@ -109,7 +109,7 @@
 					<!--<li ng-repeat="phone in phones">{{phone.name}}</li>-->
 					<!--<div class="map"></div>-->
 					<google-map center="map.center" zoom="map.zoom" draggable="true">
-						<marker ng-repeat="point in pois" coords="{latitude:point.lat,longitude:point.long}" options="point.options" events="point.events" idkey="point.id" >
+						<marker ng-repeat="point in pois" coords="{latitude:point.lat,longitude:point.long}" options="point.options" events="point.events" idkey="$index" >
        					</marker>
 				    </google-map>
 				</div>
