@@ -1,18 +1,20 @@
  <!DOCTYPE html>
-<html ng-app="miart-app">
+<html ng-app="miartApp">
 <title>miArt</title>
 <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/miart.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="../public/libs/angular/angular.js">
+	
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="../public/libs/angular/angular.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/controllers/controller.js"></script>
 	<title>#MIArt</title>
 </head>
-<body>
+<body ng-controller="MapCtrl">
 	<div class="main">
 		<!--Content-->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -94,6 +96,7 @@
 					<li>
 						<button class="btn btn-lg btn-default">Category 6</button>
 					</li>
+					<li ng-repeat="phone in phones">{{phone.name}}
 
 				</ul>
 			</div>
