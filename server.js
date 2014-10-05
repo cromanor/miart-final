@@ -241,9 +241,9 @@ router.route('/trivias')
 
 // REGISTER OUR ROUTES -------------------------------
 app.use('/api', router);
-
 app.get('*', function(req, res) {
-	res.sendfile('./public/index.html');
+	//res.sendfile('./public/index.html');
+	res.sendfile('./v2/index.html');
 });
 
 // START THE SERVER

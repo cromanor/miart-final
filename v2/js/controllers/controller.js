@@ -12,6 +12,6 @@ miartApp.controller('MapCtrl', function ($scope, $http) {
 
 	$http.get('http://miami2014-miart.rhcloud.com/api/pois').success(function(data) {
 		console.log(data);
-		this.pois = data;
+		$scope.pois = data;
 	});
 });
