@@ -1,6 +1,6 @@
 var miartApp = angular.module('miartApp', ['google-maps']);
 
-miartApp.controller('MapCtrl', function ($scope) {
+miartApp.controller('MapCtrl', function ($scope, $http) {
 	
   $scope.map = {
     center: {
@@ -8,6 +8,10 @@ miartApp.controller('MapCtrl', function ($scope) {
         longitude:  -80.189536
     },
     zoom: 14
-};
+	};
 
+	$http.get('http://miami2014-miart.rhcloud.com/api/pois').success(function(data) {
+		console.log(data);
+		this.pois = data;
+	});
 });
