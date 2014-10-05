@@ -1,4 +1,4 @@
-var miartApp = angular.module('miartApp', []);
+var miartApp = angular.module('miartApp', ['google-maps']);
 
 miartApp.controller('MapCtrl', function ($scope) {
   $scope.phones = [
