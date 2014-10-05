@@ -8,11 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/miart.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css">
 	
-    <script data-main="js/miart.js" src="js/require.js"></script>
-	<!--<script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- // <script data-main="js/miart.js" src="js/require.js"></script> -->
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="../public/libs/angular/angular.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/controllers/controller.js"></script> -->
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/controllers/controller.js"></script>
 	
 	<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
 	<script src='../public/libs/lodash/dist/lodash.underscore.min.js'></script>
@@ -107,8 +107,9 @@
 			</div>
 			<div class="col-sm-12 right-panel">
 				<div class="right-panel">
-					<li ng-repeat="phone in phones">{{phone.name}}</li>
+					<!--<li ng-repeat="phone in phones">{{phone.name}}</li>-->
 					<!--<div class="map"></div>-->
+					<google-map center="map.center" zoom="map.zoom"></google-map>
 				</div>
 			</div>
 		</div><!--End Map Controller-->
