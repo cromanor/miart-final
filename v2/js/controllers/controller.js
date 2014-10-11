@@ -7,7 +7,7 @@ miartApp.controller('MapCtrl', function ($scope, $http) {
         latitude: 25.796997,
         longitude:  -80.189536
     },
-    zoom: 14
+    zoom: 12
 	};
 
 	$http.get('api/pois').success(function(data) {
