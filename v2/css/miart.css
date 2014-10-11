@@ -6,7 +6,7 @@ html, body{
 }
 /*Main Container */
 .main{
-	height:100%;
+	min-height:1000px;
 }
 /* Nav-Bar */
 .navbar{
@@ -117,6 +117,14 @@ i:hover{
 }
 h5{
 	font-weight: 300;
+}
+
+.clear {
+	clear: both;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
 }
 
 

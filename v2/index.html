@@ -20,7 +20,7 @@
 <body>
 	<div class="main">
 		<!--Content-->
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -75,9 +75,9 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<div class="Map-Controller row" ng-controller="MapCtrl">
+		<div class="Map-Controller" ng-controller="MapCtrl">
 			<div class="col-sm-6 col-md-4 col-lg-3">
-				<div class="">
+				<div>
 					<h1>Categories</h1>
 					<hr>
 					<input type="text" class="form-control" placeholder="Search ..." ng-model="searchText">
@@ -117,6 +117,7 @@
 				    </google-map>
 				</div>
 			</div>
+			<div class="clear"></div>
 		</div><!--End Map Controller-->
 	</div><!--End Main Container-->
 	<footer>
