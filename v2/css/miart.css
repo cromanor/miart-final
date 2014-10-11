@@ -42,7 +42,6 @@ html, body{
 	padding-left:2em;
 	padding-right:2em;
 	border:2px solid black;
-	width:30%;
 	max-width:400px;
 	min-width:200px;
 	margin-left:0 !important;
@@ -62,7 +61,6 @@ input{
 .right-panel{
 	position:relative;
 	height:100%;
-	width:70%;
 	padding-top:110px;
 	padding-left:1px;
 
