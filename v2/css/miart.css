@@ -90,8 +90,8 @@ input{
 
 /*Footer*/
 .footer {
-  position: absolute;
-  bottom: 0;
+  /*position: absolute;
+  bottom: 0;*/
   width: 100%;
   padding-top:2em;
   /* Set the fixed height of the footer here */
